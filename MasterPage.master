@@ -1,0 +1,399 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+    <title>Leonard's Portfolio</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <!--Other metadata -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Leonard Wong Personal Portfolio">
+    <meta name="keywords" content="Leonard Wong, Leonard, Wong Li Ying Leonard, Leonard Portfolio,
+        Leonard Wong Portfolio, Resume, HTML, CSS, Java, C#, Thome Ship Management, Intern, RightSpot, SMU,
+        Singapore Management University, Quantedge Foundation, Quantedge Foundation Scholarship, Diploma with Merit,
+        Nanyang Polytechnic, Business Informatics, ASP.NET, Leonard Wong Linkedin, leothelion96, ltl96, leonardwong.me, 
+        ltl96.com, ltl96.me, technology, technologist, Thome Group, Thome Intern">
+    <meta name="author" content="Leonard Wong">
+    <meta name="viewport" content='initial-scale=1, viewport-fit=cover' />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/material-components-web.min.css" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/image/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/image/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/image/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/image/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/image/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/image/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/image/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/image/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/image/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/image/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/image/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/image/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/image/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="manifest.json" />
+    <script src="assets/js/manup.min.js"></script>
+    <!-- Thanks to http://www.favicon-generator.org -->
+    <!-- favicon -->
+    <style type="text/css">
+        .social-icon {
+            color: #fff;
+        }
+
+        ul.social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons li {
+            vertical-align: top;
+            display: inline;
+            height: 100px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .fa-linkedin-square {
+            padding: 10px 14px;
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
+            background-color: #322f30;
+        }
+
+            .fa-linkedin-square:hover {
+                background-color: #007bb5;
+            }
+
+        .fa-envelope-o {
+            padding: 10px 14px;
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
+            background-color: #322f30;
+        }
+
+            .fa-envelope-o:hover {
+                background-color: #0072b1;
+            }
+
+        .fa-telegram {
+            padding: 10px 14px;
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
+            background-color: #322f30;
+        }
+
+            .fa-telegram:hover {
+                background-color: #0088cc;
+            }
+
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 2.5s;
+            animation-name: animatebottom;
+            animation-duration: 2.5s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+
+        #everyContent {
+            background-color: #ffffff;
+            color: black;
+        }
+
+            #everyContent.dark-mode {
+                background-color: #212121;
+                color: #fafafa;
+            }
+
+        #scrollUp {
+            background-image: url("../assets/image/top.png");
+            bottom: 20px;
+            right: 10px;
+            width: 38px; /* Width of image */
+            height: 38px; /* Height of image */
+        }
+
+
+
+        .demo-main {
+            padding-left: 16px;
+            overflow: auto;
+        }
+
+        .menu-item:hover {
+            background-color: #bdbdbd;
+        }
+    </style>
+</head>
+<body onload="loader()" style="margin: 0;" id="everyContent">
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/init.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.scrollUp.js"></script>
+    <script type="text/javascript">
+        $('#close').sideNav('hide');
+        $('.button-collapse').sideNav({
+            menuWidth: 300,
+            edge: 'left',
+            closeOnClick: true,
+            draggable: true
+        }
+        );
+        $(document).ready(function () {
+            $("#downloadResume").click(function () {
+                var btnDownload = document.getElementById("<%=btnDownload.ClientID%>");
+                btnDownload.click();
+            })
+        });
+
+        $(document).ready(function () {
+            $('#cbDarkLight').click(function () {
+                $('#everyContent').toggleClass('dark-mode');
+
+                $('#educationDark').toggle(this.checked);
+                $('#education').toggle(this.unchecked);
+
+                $("#ccaDark").toggle(this.checked);
+                $("#cca").toggle(this.unchecked);
+
+                $('#volunteerDark').toggle(this.checked);
+                $('#volunteer').toggle(this.unchecked);
+
+                $('#jobExperienceDark').toggle(this.checked);
+                $('#jobExperience').toggle(this.unchecked);
+
+                $('#achievementsDark').toggle(this.checked);
+                $('#achievements').toggle(this.unchecked);
+
+                $('#projectsDark').toggle(this.checked);
+                $('#projects').toggle(this.unchecked);
+
+                $('#darkTableContents').toggle(this.checked);
+                $('#lightTableContents').toggle(this.unchecked);
+
+                $('#darkChangelogs').toggle(this.checked);
+                $('#lightChangelogs').toggle(this.unchecked);
+            })
+        });
+
+        $(document).ready(function () {
+            var s = localStorage.getItem('theme');
+            if (s != null) {
+                if (s == 'dark') {
+                    $('#cbDarkLight').trigger('click');
+                    console.log("dark style");
+                }
+                else if (s == 'light') {
+                    console.log("light style");
+                }
+            }
+        })
+
+        function persistStyle() {
+            var s = document.getElementById("cbDarkLight");
+            if (s.checked == true) {        //Dark Mode
+                localStorage.removeItem('theme');
+                localStorage.setItem('theme', 'dark');
+            } else if (s.checked == false) {        //Light Mode
+                localStorage.removeItem('theme');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        $(function () {
+            $.scrollUp({
+                scrollName: 'scrollUp',      // Element ID
+                scrollDistance: 300,         // Distance from top/bottom before showing element (px)
+                scrollFrom: 'top',           // 'top' or 'bottom'
+                scrollSpeed: 300,            // Speed back to top (ms)
+                easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+                animation: 'fade',           // Fade, slide, none
+                animationSpeed: 200,         // Animation speed (ms)
+                scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
+                scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
+                scrollText: '', // Text for element, can contain HTML
+                scrollTitle: false,          // Set a custom <a> title if required.
+                scrollImg: false,            // Set true to use image
+                activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+                zIndex: 2147483647           // Z-Index for the overlay
+            });
+        });
+    </script>
+
+    <div class="mdc-toolbar mdc-toolbar--fixed grey darken-3">
+        <div class="mdc-toolbar__row">
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                <i class="demo-menu material-icons">menu</i>
+                <span class="mdc-toolbar__title catalog-title" style="font-size: 1.25em">&emsp;Leonard's Portfolio</span>
+            </section>
+        </div>
+    </div>
+
+    <aside class="mdc-temporary-drawer">
+        <nav class="mdc-temporary-drawer__drawer">
+            <nav class="mdc-temporary-drawer__content mdc-list-group grey lighten-5">
+                <div id="icon-with-text-demo" class="mdc-list">
+                    <span class="mdc-list-item mdc-list-item__start-detail grey darken-3" style="width: 100%"></span>
+                    <span class="mdc-list-item mdc-list-item__start-detail grey darken-3" style="width: 100%"></span>
+                    <span class="mdc-list-item mdc-list-item__start-detail grey darken-3" style="width: 100%"></span>
+                    <br />
+                    <a class="mdc-list-item menu-item" href="Main">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">home</i>Home
+                    </a>
+                </div>
+                <hr class="mdc-list-divider">
+                <div class="mdc-list">
+                    <a class="mdc-list-item menu-item" href="resume-word-format.pdf" target="_blank" rel="noreferrer noopener">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">open_in_new</i>View Résumé
+                    </a>
+                    <a class="mdc-list-item menu-item" href="#" id="downloadResume">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">cloud_download</i>Download Résumé
+                 
+                    </a>
+                    <a class="mdc-list-item menu-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">cached</i>
+                        <div class="switch" style="float: right; right: 0">
+                            <label>
+                                Light
+                                <input type="checkbox" id="cbDarkLight" onchange="persistStyle()">
+                                <span class="lever"></span>
+                                Dark
+                            </label>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+        </nav>
+    </aside>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="preloader-wrapper big active" id="loader" style="left: 50%; top: 50%;">
+        <div class="spinner-layer spinner-blue-only center-align">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fullContent animate-bottom" style="display: none">
+        <div class="container">
+            <div class="section">
+                <form id="form1" runat="server">
+                    <asp:Button ID="btnDownload" runat="server" OnClick="btnDownload_Click" Style="display: none;" />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<div class="fullContent animate-bottom" style="display: none">
+    <footer class="page-footer grey darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                </div>
+                <div class="col l6 s12 push-l2">
+                    <h5 class="white-text">Connect with Me</h5>
+                    <p class="grey-text text-lighten-4">
+                        <ul class="social-icons">
+                            <li><a href="https://linkedin/leothelion96" class="social-icon" target="_blank" rel="noreferrer noopener"><i class="fa fa-linkedin-square" id="linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:me@leonardwong.net" class="social-icon" target="_blank" rel="noreferrer noopener"><i class="fa fa-envelope-o" id="email" aria-hidden="true"></i></a></li>
+                            <li><a href="https://t.me/leothelion96" class="social-icon" target="_blank" rel="noreferrer noopener"><i class="fa fa-telegram" id="telegram" aria-hidden="true"></i></a></li>
+
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                &copy <asp:Label ID="copyYear" runat="server"></asp:Label> Leonard Wong <span style="float: right">All Rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    var drawerEl = document.querySelector('.mdc-temporary-drawer');
+    var MDCTemporaryDrawer = mdc.drawer.MDCTemporaryDrawer;
+    var drawer = new MDCTemporaryDrawer(drawerEl);
+    document.querySelector('.demo-menu').addEventListener('click', function () {
+        drawer.open = true;
+    });
+    drawerEl.addEventListener('MDCTemporaryDrawer:open', function () {
+        console.log('Received MDCTemporaryDrawer:open');
+    });
+    drawerEl.addEventListener('MDCTemporaryDrawer:close', function () {
+        console.log('Received MDCTemporaryDrawer:close');
+    });
+</script>
+<script>
+    var myVar;
+
+    function loader() {
+        myVar = setTimeout(showPage, 500);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementsByClassName("fullContent")[0].style.display = "block";
+        document.getElementsByClassName("fullContent")[1].style.display = "block";
+    }
+</script>
+
+</html>
